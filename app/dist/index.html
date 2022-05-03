@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:regular,italic,700,700italic" rel="stylesheet">
+
+</head>
+<body>
+   
+    <header class="header">
+        <h1 class="header__title">Password Generator</h1>
+    </header>
+
+    <main>
+
+        <section class="info">
+            <div class="info__number">
+                <input type="number" class="info__input" id="password__length">
+            </div>
+
+            <div class="info__checked">
+                <label class="info__label" for="include__uppercase">Uppercase<input type="checkbox" class="checked" id="include__uppercase" checked></label>
+                <label class="info__label" for="include__lowercase">Lowercase<input type="checkbox" class="checked" id="include__lowercase"></label>
+                <label class="info__label" for="include__numbers">Numbers<input type="checkbox" class="checked" id="include__numbers"></label>
+                <label class="info__label" for="include__symbols">Symbols<input type="checkbox" class="checked" id="include__symbols"></label>
+            </div>
+
+            <div class="info__submit">
+                <button class="info__button" id="submit">Create new Password</button>
+            </div>
+
+            <div class="info__mensage">
+                <p class="info__paragraph"></p>
+            </div>
+        </section>
+
+        <section class="res">
+            <div class="res container" id="res__style">
+                <input type="text" class="res__input">
+                <button class="res__clipboard">Copy to Clipboard</button>
+            </div>
+            <div class="res__mensage">
+                <p class="res__paragraph"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+    
+</body>
+</html>

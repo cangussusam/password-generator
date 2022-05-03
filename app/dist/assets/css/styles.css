@@ -1,0 +1,108 @@
+body{
+    font-family: 'Arvo', serif;
+    background: #0E402D;
+}
+
+.header{
+    background: black;
+}
+
+.header__title{
+    color: #fdfdfd;
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.info__label{
+    color: #fdfdfd;
+}
+
+.info__input{
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+
+.info__checked{
+    margin: 1rem;
+}
+
+.checked{
+    transform: scale(2);
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+.info__button{
+    font-size: 1.5rem;
+    background: #267A59;
+    color: #fdfdfd;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.info__paragraph{
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    margin: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.res.container{
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    margin-top: 7rem;
+}
+
+.res.container.remove{
+    margin-top: 0;
+}
+
+.res__input{
+    font-size: 1.15rem;
+    border-radius: 5px;
+    width: 30%;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.res__clipboard{
+    background: #267A59;
+    color: #fdfdfd;
+    padding: 0.25rem;
+    height: 1.75rem;
+}
+
+.res__mensage{
+    text-align: center;
+}
+
+.res__paragraph{
+    color: #fdfdfd;
+    font-size: 1.15rem;
+    margin: 2rem;
+}
+
+.error{
+    color: rgb(201, 93, 93);
+}
+
+.transition{
+    
+    animation: trans;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes trans {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
